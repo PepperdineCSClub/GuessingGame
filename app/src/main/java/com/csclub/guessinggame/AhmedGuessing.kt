@@ -11,13 +11,20 @@ class AhmedGuessing : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
-        val randomValues = List(10) { Random.nextInt(0, 10) }
+        val randomValue = { Random.nextInt(0, 10) }
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ahmed_guessing)
         guess_button.setOnClickListener{
             var input = getText(text_box)
-            if (input > ) {
+            if (input > randomValue) {
 
+
+            }
+            else if (input < randomValue){
+
+            }
+            else{
+                
             }
         }
     }
